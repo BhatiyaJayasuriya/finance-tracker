@@ -19,7 +19,7 @@
     <div id='stock-lookup-results' class='well result-block'>
       <strong>Symbol:</strong> <%= @stock.ticker %>
       <strong>Name:</strong> <%= @stock.name %>
-      <strong>Price:</strong> <%= @stock.price %>
+      <strong>Price:</strong> <%= @stock.price %> <!-- calling the method price of Stock -->
       <% if current_user.can_add_stock?(@stock.ticker) %>
         <%= link_to 'Add to my stocks', 
             user_stocks_path(

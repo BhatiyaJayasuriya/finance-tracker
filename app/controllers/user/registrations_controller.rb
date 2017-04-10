@@ -1,6 +1,6 @@
 class User::RegistrationsController < Devise::RegistrationsController
-  
-  before_action :configure_permitted_parameters
+  # customizing Devise user registration
+  before_filter :configure_permitted_parameters
   
   
   protected
